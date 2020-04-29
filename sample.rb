@@ -9,12 +9,26 @@ class User
 def introduce
   text = ""
   if adult?
-  text =  "はじめまして、私の名前は#{@name}でえす。\n\n"
-  else
-  text =  "僕は#{@name}だッッ！！ショタコンばばあは失せていただこう\n\n"
+  text = <<~EOS
+    はじめまして、私の名前は#{@name}でえす。
+
+    おちんぽなめたろうは#{@name}のことだッ！！
+
+    #{@age}歳さ。
+
+    よろしくな愚民ども
+    EOS
+   else
+    text = <<~EOS
+    僕は#{@name}だッッ！！
+
+    しかもまだ#{@age}歳だからね
+
+    ショタコンばばあは失せていただこう
+
+    EOS
   end
 
-text += "自己紹介終わり\n"
 text += "-----------------------------------"
 
   text
