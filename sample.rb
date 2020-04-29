@@ -54,7 +54,7 @@ end
 
 
 
-params = [{name: "saito", age: 22},  {name: "ozawa", age: 19}, {name: "kamizato", age: 99}]
+params = [{name: "saito", age: 22},  {name: "ozawa", age: 19}, {name: "kamizato", age: 99}  {name: "suzuki", age: 69}]
 
 users = build_users(params)
 
