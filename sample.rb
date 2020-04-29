@@ -6,11 +6,20 @@ class User
     end
 end
 
-user1 = User.new(name: "saito")
-user2 = User.new(name: "ozawa")
-user3 = User.new(name: "kamizato")
+def build_users(names)
+  users = []
+ names.each do |name|
+   users << User.new(name: name)
+end
 
-users = [user1, user2, user3]
+users
+end
+
+
+
+names = ["saito", "ozawa", "kamizato"]
+
+users = build_users(names)
 
 
 users.each do |user|
